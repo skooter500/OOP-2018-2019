@@ -47,7 +47,7 @@ Some assignments from previous years:
 
 Create a new empty folder using Windows Explorer and then right click on the folder and choose git bash here. Alternatively you can start the bash and cd to the new folder. Type:
 
-```
+```bash
 git clone https://github.com/skooter500/OOP-2018-2019
 ```
 
@@ -55,7 +55,7 @@ To clone the repository for the course to the empty folder.
 
 Now lets create a branch to store your work for today. Type:
 
-```
+```bash
 git checkout -b lab1
 ```
 
@@ -63,20 +63,60 @@ All your changes from now on will be on this branch rather than the master branc
 
 Type 
 
-```
+```bash
 ls
 ```
 
 And you will see the folder OOP-2018-2019 has been created. Type:
 
-```
+```bash
 cd OOP-2018-2019/java
 ```
 
 Make a folder called bin by typing:
 
-```
+```bash
 mkdir bin
 ```
 
-This is where 
+This is where the java compiler will place generated .class files compiled from the Java source files in the src folder. The bin folder and compiled class files will not be in the git repo as it just stores source code and not the output of the build process. To compile, type:
+
+```bash
+javac -d bin src/ie/dit/*.java
+```
+
+To run your program type:
+
+```bash
+javac -d bin src/ie/dit/*.java
+````
+
+You should see:
+
+```
+Hello world
+Misty
+Woof!
+Meow!
+Felix
+```
+
+Appear on the console. Congratulations! You compiled and ran your first Java program. 
+
+Now open up the Java code files in Notepad++ or Visual Studio code if you are using your own computer. Modify the Cat class:
+
+- Add a private field for numLives of type int
+- Make accessors (set and get methods) for numLives, similar to how this was done in the Dog class
+- Write a default public Constructor for the cat that sets the number of lives to be 1. A default constructor is a method with the following characteristics:
+    - No return type!
+    - Same name as the class
+    - Takes no parameters
+- Write a method on the Cat class called kill. It should subtract 1 from numLives if numLives is > 0 and print the message "Ouch!". If numLives is 0, you should just print the message "Dead"
+- In the Main class, construct a Cat instance and in a loop, call kill until the Cat is dead.
+
+Commit your changes to the branch by typing:
+
+```bash
+git add .
+git commit -m "Added kill method to the Cat class"
+```
