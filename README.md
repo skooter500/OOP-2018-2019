@@ -141,3 +141,31 @@ And you will find your changes there
 
 ### Part 3
 
+- Clone the repo for the course last year. The URL is https://github.com/skooter500/OOP-2017-2018
+- cd into the java folder of the newly cloned repository
+- To compile the code, type:
+
+```
+./compile.sh
+```
+
+- To run the code type:
+
+```
+./run.sh
+```
+
+If you edit the file Main.java, you can comment out the line main.matrixMultiplication(); and instead uncomment any of the other lines to see some of the examples we made last year. In particular, the tuineFinder1 example is pretty cool. It loads up a recording of a tune played on the tinwhistle, transcribes the audio to music notes and then finds a match for the tune in an SQLite database of tunes
+
+```Java
+//main.matrixMultiplication();
+//main.editDistance();
+//main.strings();
+//main.dictionary();
+//main.transform();
+
+main.matrixMultiplication();
+//main.tuneFinder1();
+```
+
+
