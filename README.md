@@ -53,6 +53,7 @@ Create a new empty folder using Windows Explorer and then right click on the fol
 
 ```bash
 git clone https://github.com/skooter500/OOP-2018-2019
+cd OOP-2018-2019
 ```
 
 Now lets create a branch to store your work for today. Type:
@@ -107,12 +108,13 @@ Appear on the console. Congratulations! You compiled and ran your first Java pro
 
 Now open up the Java code files in Notepad++ or Visual Studio code if you are using your own computer. Modify the Cat class:
 
-- Add a private field for numLives of type int
+- Add a private field for numLives of type int on the Cat class
 - Make accessors (set and get methods) for numLives, similar to how this was done in the Dog class
 - Write a default public Constructor for the cat that sets the number of lives to be 1. A default constructor is a method with the following characteristics:
     - No return type!
     - Same name as the class
     - Takes no parameters
+    - Gets called when the object is created 
 - Write a method on the Cat class called kill. It should subtract 1 from numLives if numLives is > 0 and print the message "Ouch!". If numLives is 0, you should just print the message "Dead"
 - In the Main class, construct a Cat instance and in a loop, call kill until the Cat is dead.
 
