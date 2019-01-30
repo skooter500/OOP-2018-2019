@@ -90,7 +90,7 @@ javac -d bin src/ie/dit/*.java
 To run your program type:
 
 ```bash
-javac -d bin src/ie/dit/*.java
+java -cp bin ie.dit.HelloWorld
 ````
 
 You should see:
