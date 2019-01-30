@@ -43,15 +43,17 @@ Some assignments from previous years:
 - Use git
 - Make your first Java classes
 
-### Part 1
 
-Create a new empty folder using Windows Explorer and then right click on the folder and choose git bash here. Alternatively you can start the bash and cd to the new folder. Type:
+### Part 1
+Create an account for yourself on [github](http://github.com). Sign up for the [github student pack](https://education.github.com/pack) to enable you to create private repositories.
+
+### Part 2
+
+Create a new empty folder using Windows Explorer and then right click on the folder and choose git bash here. Alternatively you can start the bash and cd to the new folder. To clone the repository for the course to the empty folder type:
 
 ```bash
 git clone https://github.com/skooter500/OOP-2018-2019
 ```
-
-To clone the repository for the course to the empty folder. 
 
 Now lets create a branch to store your work for today. Type:
 
@@ -120,3 +122,22 @@ Commit your changes to the branch by typing:
 git add .
 git commit -m "Added kill method to the Cat class"
 ```
+
+Switch back to the master branch by typing:
+
+```bash
+git checkout master
+```
+
+Notepad++ will reload your files and you will see that your changes are gone.
+
+Change back to the lab1 branch by typing:
+
+```
+git checkout lab1
+```
+
+And you will find your changes there
+
+### Part 3
+
