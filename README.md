@@ -22,7 +22,13 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Week 2 - Variables, loops, Processing
+
+- []
+
 # Week 1 - Introduction
+
+- [Dogs & Cats example](java/src/ie/dit)
 
 Some assignments from previous years:
 
