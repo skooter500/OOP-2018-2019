@@ -2,6 +2,7 @@ package ie.dit;
 
 public class Main
 {	
+
 	public void helloProcessing()
 	{
 		String[] a = {"MAIN"};
@@ -12,5 +13,6 @@ public class Main
 	{
 		Main main = new Main();
 		main.helloProcessing();	
+		//System.out.println("Hello me!!!");
 	}
 }
