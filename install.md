@@ -37,15 +37,15 @@ To compile and run the code, type:
 
 Open these two shell scripts in an editor to see what they contain.
 
-You can also run and debug your code from Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. Open the file and check it out. This is an XML file that lists all the dependancies for the project. Jave dependancies are jar files. jar files are zip files with a jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code.
+You can also edit and run your code in Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. This is an XML file that lists all the jar files that the project depends on. Open the file in VSC and check it out.  Java dependancies are jar files. jar files are zip files with a .jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code.
 
 ## Lab Computers
 
-Visual Studio code is not installed on the lab computers, so edit your Java code in Notepad++ and use the ```./compile.sh``` and ```./run.sh``` shell scripts to compile and run your code
+Visual Studio code is not installed on the lab computers, so edit your Java code in Notepad++ and use the ```./compile.sh``` and ```./run.sh``` shell scripts to compile and run.
 
 ## Mac
 
-Mac users will need JDK 8 *not JDK 11* as the Processing libraries are not compatible with Java 11 on the Mac. You can check to see if you already have the JDK installed by typing:
+Mac users will need JDK 8 *not JDK 11* as the Processing libraries we are using on the course are not compatible with Java 11 on the Mac. You can check to see if you already have the JDK installed by typing:
 
 ```bash
 javac -version
