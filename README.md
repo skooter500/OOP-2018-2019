@@ -32,14 +32,14 @@ Resources
 - Practice drawing stuff and working out co-ordinates
 - Practice using variables and if statements in Java
 
-This is a video of a silly game called Bugzap that you can try and make in Java today. There is a fair bit to it, so you probably won't get everything completed.
+This is a video of a silly game called Bugzap made in Java using the Processing libraries. Today we can make a part of this game in order to get some practice using variables in Java.
 
 [![YouTube](http://img.youtube.com/vi/s6PA8jtWneQ/0.jpg)](https://www.youtube.com/watch?v=s6PA8jtWneQ)
 
 How you should do it:
 [Read this to get Java/VSC/git and the Processing libraries installed](https://github.com/skooter500/OOP-2018-2019/blob/master/install.md)
 
-Ok Let's get the main game working first and not worry about the splash screen and the game over screen
+Ok let's get the main game working first and not worry about the splash screen and the game over screen
 
 - Clone the repository for the course, or pull from the remote repository to get the changes I made over the last couple of days
 - Get the HelloProcessing example working. See [these instructions](https://github.com/skooter500/OOP-2018-2019/blob/master/install.md).
@@ -49,39 +49,62 @@ Ok Let's get the main game working first and not worry about the splash screen a
 git checkout -b lab2
 ```
 
-- Create a new class called BugZap.java in the ie.dit folder. Make it extend PApplet and add the settings, setup and draw methods similar to the HelloProcessing class. Call size in settings to set the size of the drawing window. 
-- Edit the file Main.java so that it starts the BugZap class instead of the HelloProcessing class.
-- Make sure everything works by compiling and running your program before continuing.
+- Create a new class called BugZap.java in the ie.dit folder. Make it extend ```PApplet``` and add the ```settings```, ```setup``` and ```draw``` methods. Check out HelloProcessing.java if you need examples for these.
+- Call ```size``` in ```settings``` to set the size of the drawing window. 
+- Edit the file Main.java so that it starts the BugZap class instead of the HelloProcessing class. I'll let you figure out how to do this.
+- Make sure everything works by compiling and running your program before continuing!
 
+Now we can draw the bug.
 
+- Make fields of type ```float``` in the BugZap class for ```playerX```, ```playerY``` and ```playerWidth``` and give these default values. You can decide what these should be. There are built in variables called width and height that give the width and height of the drawing window. These only get assigned after size has been called, so if you want to use these to give values to playerX, playerY etc. put the code into the setup method. 
+- Write a method called void ```void drawPlayer(float x, float y, float w)``` that draws the player character, centered around the parameters x, y. You can use the line method to do this. You can pass variables as parameters to this method and also things like ```x + 20```, ```w * 0.5f``` etc. I made an extra variable in this method called h for the height and set it to be half the w parameter. Don't forget to set the stroke color!
+- Call this method from ```draw```, passing in the parameters playerX, playerY and playerWidth.
+- Compile and run everything to make sure it's working before continuing.
+- If everything is working ok, you should see the bug on the screen
 
+Now lets get the player moving in response to the keys
 
-- Write some code to draw the bug. You can write a method to do this if you like (but it's not essential). Here is [an article on using methods in processing](https://processing.org/examples/functions.html). Also make global variables for the bug position and size.
-- Get the bug moving. The bug moves a random amount either to the left or the right and it also moves down the screen. Use the random method in Processing to generate random numbers. Also the bug can't move off the screen. You can use the % operator to make something happen on an interval. For example:
-
-  ```Java
-  if (frameCount % 60 == 0)
-  {
-    // Code in here will happen once per second
-  }
-  ```
-- Write some code to draw the player. Use variables to control the player position and size. A method is good here too!
-- Write code to move the player in response to a key presses. This is one way to do keyboard handling in Processing:
+Add this method to BugZap.java:
 
 ```Java
-if (keyPressed)
+public void keyPressed()
+	{
+		if (keyCode == LEFT)
+		{
+			System.out.println("Left arrow pressed");
+		}
+		if (keyCode == RIGHT)
+		{
+			System.out.println("Right arrow pressed");
+		}
+		if (key == ' ')
+		{
+			System.out.println("SPACE key pressed");
+		}
+	}	
+```
+
+- If you compile and run the program again you will see that some messages get printed out when you press various keys. If you are running in Visual Studio Code, you will see these messages appear in the Debug Console
+- Modify this method to increment and decrement the playerX variable instead and you should be able to get the player to move left and right
+- You might want to add if statements to this method to stop the player moving off the left and right side of the screens. If statements in Java are almost the same as in C
+- When the player presses SPACE you will want to draw a line for the player's laser.
+
+The Bug
+
+- In a similar way to how you made the player, make the Bug. Make variables and drawBug method. Don't forget to call the method from draw()
+- To move the bug you can add a random amount to it's x coordinate on intervals. To generate a random number you can use the [random](https://processing.org/reference/random_.html) function.  
+- One way to make stuff happen on an interval rather than every frame is to use the frameCount variable. This variable is a field in PApplet and it gets incremented automatically every time draw is called. Because draw gets called 60 times a second, you can do something every second with this code:
+
+```Java
+if ((frameCount % 60) == 0)
 {
-  if (keyCode == LEFT)
-  {
-    // This will happen if the left key is pressed
-  }
+    // Do something
 }
 ```
-- Now add the player lazer. I used to UP key for this. I just drew a line for the lazer.
-- Make a variable for score and check for collisions between the lazer and the bug. Add a variable for score. You can print stuff to the screen using the text method in Processing. In my version, I actually used [this processing library](http://www.foobarquarium.de/blog/processing/MovingLetters/) which makes wireframe text.
-- Make some sound effects and add them to the game. I used [BFXR](http://www.bfxr.net/) to make the sounds and the Minim library to play them, but you might prefer to use the [built-in audio methods in Processing](https://processing.org/tutorials/sound/).
-- Add the splash screen and game over screen
 
+- You can print text to the screen using the [text](https://processing.org/reference/text_.html) function.
+
+Ok you should now have the basics working. See if you can figure out how to check to see if the player hits the bug, add scoring, splash screen, game over screen and sound.
 
 # Week 1 - Introduction
 
