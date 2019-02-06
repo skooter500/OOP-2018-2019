@@ -37,11 +37,21 @@ This is a video of a silly game called Bugzap that you can try and make in Java 
 [![YouTube](http://img.youtube.com/vi/s6PA8jtWneQ/0.jpg)](https://www.youtube.com/watch?v=s6PA8jtWneQ)
 
 How you should do it:
-- Read this!
-- Let's get the main game working first and not worry about the splash screen and the game over screen
+[Read this to get Java/VSC/git and the Processing libraries installed](https://github.com/skooter500/OOP-2018-2019/blob/master/install.md)
+
+Ok Let's get the main game working first and not worry about the splash screen and the game over screen
 
 - Clone the repository for the course, or pull from the remote repository to get the changes I made over the last couple of days
-- Get the HelloProcessing example working.
+- Get the HelloProcessing example working. See [these instructions](https://github.com/skooter500/OOP-2018-2019/blob/master/install.md).
+- Start bash and make sure you are in the java folder in the repository. Create a branch for your work today by typing:
+
+```
+git checkout -b lab2
+```
+
+- Create a new class called BugZap.java in the ie.dit folder. Make it extend PApplet and add the settings, setup and draw methods similar to the HelloProcessing class. Call size in settings to set the size of the drawing window. 
+- Edit the file Main.java so that it starts the BugZap class instead of the HelloProcessing class.
+- Make sure everything works by compiling and running your program before continuing.
 
 
 
