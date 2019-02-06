@@ -2,15 +2,15 @@
 
 ## Windows/Linux
 
-Setting up Java on Windows:
-
-[![YouTube](http://img.youtube.com/vi/WXftKFCtPrQ/0.jpg)](https://www.youtube.com/watch?v=WXftKFCtPrQ)
-
-
 - [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Visual Studio Code Java Extensions](https://code.visualstudio.com/docs/languages/java)
 - [Git](https://git-scm.com/download/)
+
+Setting up Java on Windows:
+
+[![YouTube](http://img.youtube.com/vi/WXftKFCtPrQ/0.jpg)](https://www.youtube.com/watch?v=WXftKFCtPrQ)
+
 
 Install the above software. Create an empty folder on your computer. Right click on the folder and select Git Bash here.
 
@@ -38,6 +38,10 @@ To compile and run the code, type:
 Open these two shell scripts in an editor to see what they contain.
 
 You can also run and debug your code from Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. Open the file and check it out. This is an XML file that lists all the dependancies for the project. Jave dependancies are jar files. jar files are zip files with a jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code.
+
+## Lab Computers
+
+Visual Studio code is not installed on the lab computers, so edit your Java code in Notepad++ and use the ```./compile.sh``` and ```./run.sh``` shell scripts to compile and run your code
 
 ## Mac
 
@@ -75,5 +79,4 @@ The path seperator on the mac is different to that on Windows, so to compile and
 
 To use Visual Studio code, open the java folder in the repository. 
 
-Visual Studio Code is almost working fine on the Mac, but for some reason even though I have removed JDK 11 from my mac, the project is still compiling with the JDK 11 compiler (if someone figures out why this is happening, please let me know!) How I get around this is to go to View | Terminal in Visual Studio Code. cd to the java folder (if you need to) and type ./mcompile.sh. Thereafter, you can go to the Debug menu and debug your code.
-
+Visual Studio Code is almost working fine on the Mac, but for some reason even though I have removed JDK 11 from my mac, the project is still compiling with the JDK 11 compiler (if someone figures out why this is happening, please let me know!) How I get around this is to go to View | Terminal in Visual Studio Code. cd to the java folder (if you need to) and type ./mcompile.sh. Thereafter, you can go to the Debug menu and debug/edit your code.
