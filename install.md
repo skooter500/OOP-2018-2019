@@ -37,7 +37,7 @@ To compile and run the code, type:
 
 Open these two shell scripts in an editor to see what they contain.
 
-You can also edit and run your code in Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. This is an XML file that lists all the jar files that the project depends on. Open the file in VSC and check it out.  Java dependancies are jar files. jar files are zip files with a .jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code.
+You can also edit and run your code in Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. This is an XML file that lists all the jar files that the project depends on. Open the file in VSC and check it out.  jar files are zip files with a .jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code.
 
 ## Lab Computers
 
