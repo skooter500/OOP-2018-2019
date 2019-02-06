@@ -79,4 +79,4 @@ The path seperator on the mac is different to that on Windows, so to compile and
 
 To use Visual Studio code, open the java folder in the repository. 
 
-Visual Studio Code is almost working fine on the Mac, but for some reason even though I have removed JDK 11 from my mac, the project is still compiling with the JDK 11 compiler (if someone figures out why this is happening, please let me know!) How I get around this is to go to View | Terminal in Visual Studio Code. cd to the java folder (if you need to) and type ./mcompile.sh. Thereafter, you can go to the Debug menu and debug/edit your code.
+Visual Studio Code is almost working fine on the Mac, but for some reason even though I have removed JDK 11 from my mac, the project is still compiling with the JDK 11 compiler (if someone figures out why this is happening, please let me know!) How I get around this is to go to View | Terminal in Visual Studio Code. cd to the java folder (if you need to) and type ./mcompile.sh. Thereafter, you can go to the Debug menu to run your code.
