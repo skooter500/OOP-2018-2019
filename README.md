@@ -37,7 +37,6 @@ This is a video of a silly game called Bugzap made in Java using the Processing 
 [![YouTube](http://img.youtube.com/vi/s6PA8jtWneQ/0.jpg)](https://www.youtube.com/watch?v=s6PA8jtWneQ)
 
 How you should do it:
-[Read this to get Java/VSC/git and the Processing libraries installed](https://github.com/skooter500/OOP-2018-2019/blob/master/install.md)
 
 Ok let's get the main game working first and not worry about the splash screen and the game over screen
 
