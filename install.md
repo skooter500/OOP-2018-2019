@@ -1,0 +1,69 @@
+# Software you will need for this module
+
+## Windows/Linux
+
+- [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code Java Extensions](vscode:extension/vscjava.vscode-java-pack)
+- [Git](https://git-scm.com/download/)
+
+[![YouTube](http://img.youtube.com/vi/WXftKFCtPrQ/0.jpg)](https://www.youtube.com/watch?v=WXftKFCtPrQ)
+
+To clone the repository for the course type:
+
+```bash
+git clone http://github.com/skooter500/OOP-2018-2019
+```
+Start a bash shell and cd to the OOP-2018-2019/java folder and type:
+
+```bash
+mkdir bin
+```
+To make the bin folder. This folder will contain your compiled Java files. Compiled java files have a .class extension.
+
+To compile and run the code, type:
+
+```bash
+./compile.sh
+./run.sh
+```
+
+You can also run and debug your code from Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. Open the file and check it out. This is an XML file that lists all the dependancies for the project. Jave dependancies are jar files. jar files are zip files with a jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code for this course.
+
+## Mac
+
+Mac users will need JDK 8 *not JDK 11* as the Processing libraries are not compatible with Java 11 on the Mac. You can check to see if you already have the JDK installed by typing:
+
+```bash
+javac -version
+```
+Into the terminal window. If a different version (like JDK 11) is installed, you will need to remove it. To do this, type:
+
+```bash
+cd /Library/Java/JavaVirtualMachines
+ls
+```
+This will list all the versions of Java you have installed. To remove version 11 (for example) type:
+
+```bash
+sudo rm -rf jdk-11.0.2.jdk
+```
+You can get Java 8, Visual Studio code etc for the Mac from here:
+
+- [JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code Java Extensions](vscode:extension/vscjava.vscode-java-pack)
+
+The first time you type ```git``` in the Mac terminal, the OS will prompt you to install the XCode command line tools that also contains git.
+
+The path seperator on the mac is different to that on Windows, so to compile and run the code from the course, cd to the java folder in the repository and type:
+
+```bash
+./mcompile.sh
+./mrun.sh
+```
+
+To use Visual Studio code, open the java folder in the repository. 
+
+Visual Studio Code is almost working fine on the Mac, but for some reason even though I have removed JDK 11 from my mac, the project is still compiling with the JDK 11 compiler (if someone figures out why this is happening, please let me know!) How I get around this is to go to View | Terminal in Visual Studio Code. cd to the java folder (if you need to) and type ./mcompile.sh. Thereafter, you can go to the Debug menu and debug your code.
+

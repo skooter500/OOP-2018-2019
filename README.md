@@ -2,6 +2,7 @@
 
 Resources
 ---------
+- [Install the software you will need for this module](install.md)
 * [The Java Tutorial from Oracle](http://docs.oracle.com/javase/tutorial/)
 * [Games Fleadh](http://www.gamesfleadh.ie/)
 * [The Nature of Code](http://natureofcode.com/)
@@ -22,9 +23,55 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
-# Week 2 - Variables, loops, Processing
+# Week 2 - Using Variables in Java, HelloProcessing example
 
-- []
+- Check out the HelloProcessing class in the repo
+- We drew the all seeing eye using the Processing drawing methods
+
+## Learning Outcomes
+- Practice drawing stuff and working out co-ordinates
+- Practice using variables and if statements in Java
+
+This is a video of a silly game called Bugzap that you can try and make in Java today. There is a fair bit to it, so you probably won't get everything completed.
+
+[![YouTube](http://img.youtube.com/vi/s6PA8jtWneQ/0.jpg)](https://www.youtube.com/watch?v=s6PA8jtWneQ)
+
+How you should do it:
+- Read this!
+- Let's get the main game working first and not worry about the splash screen and the game over screen
+
+- Clone the repository for the course, or pull from the remote repository to get the changes I made over the last couple of days
+- Get the HelloProcessing example working.
+
+
+
+
+- Write some code to draw the bug. You can write a method to do this if you like (but it's not essential). Here is [an article on using methods in processing](https://processing.org/examples/functions.html). Also make global variables for the bug position and size.
+- Get the bug moving. The bug moves a random amount either to the left or the right and it also moves down the screen. Use the random method in Processing to generate random numbers. Also the bug can't move off the screen. You can use the % operator to make something happen on an interval. For example:
+
+  ```Java
+  if (frameCount % 60 == 0)
+  {
+    // Code in here will happen once per second
+  }
+  ```
+- Write some code to draw the player. Use variables to control the player position and size. A method is good here too!
+- Write code to move the player in response to a key presses. This is one way to do keyboard handling in Processing:
+
+```Java
+if (keyPressed)
+{
+  if (keyCode == LEFT)
+  {
+    // This will happen if the left key is pressed
+  }
+}
+```
+- Now add the player lazer. I used to UP key for this. I just drew a line for the lazer.
+- Make a variable for score and check for collisions between the lazer and the bug. Add a variable for score. You can print stuff to the screen using the text method in Processing. In my version, I actually used [this processing library](http://www.foobarquarium.de/blog/processing/MovingLetters/) which makes wireframe text.
+- Make some sound effects and add them to the game. I used [BFXR](http://www.bfxr.net/) to make the sounds and the Minim library to play them, but you might prefer to use the [built-in audio methods in Processing](https://processing.org/tutorials/sound/).
+- Add the splash screen and game over screen
+
 
 # Week 1 - Introduction
 
