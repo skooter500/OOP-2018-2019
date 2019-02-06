@@ -2,24 +2,31 @@
 
 ## Windows/Linux
 
-- [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Visual Studio Code Java Extensions](vscode:extension/vscjava.vscode-java-pack)
-- [Git](https://git-scm.com/download/)
+Setting up Java on Windows:
 
 [![YouTube](http://img.youtube.com/vi/WXftKFCtPrQ/0.jpg)](https://www.youtube.com/watch?v=WXftKFCtPrQ)
+
+
+- [JDK 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code Java Extensions](https://code.visualstudio.com/docs/languages/java)
+- [Git](https://git-scm.com/download/)
+
+Install the above software. Create an empty folder on your computer. Right click on the folder and select Git Bash here.
 
 To clone the repository for the course type:
 
 ```bash
 git clone http://github.com/skooter500/OOP-2018-2019
 ```
-Start a bash shell and cd to the OOP-2018-2019/java folder and type:
+
+Make a bin folder for your compiled Java classes. Compiled java files have a .class extension:
+
+cd to the OOP-2018-2019/java folder and type:
 
 ```bash
 mkdir bin
 ```
-To make the bin folder. This folder will contain your compiled Java files. Compiled java files have a .class extension.
 
 To compile and run the code, type:
 
@@ -28,7 +35,9 @@ To compile and run the code, type:
 ./run.sh
 ```
 
-You can also run and debug your code from Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. Open the file and check it out. This is an XML file that lists all the dependancies for the project. Jave dependancies are jar files. jar files are zip files with a jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code for this course.
+Open these two shell scripts in an editor to see what they contain.
+
+You can also run and debug your code from Visual Studio Code! To do this open Visual Studio Code and choose File | Open Folder *not open file* and open the *java* folder in the repo. There are two files in this folder that tells VSC how to compile and the Java code. The most significant of these is the .classpath file. Open the file and check it out. This is an XML file that lists all the dependancies for the project. Jave dependancies are jar files. jar files are zip files with a jar extension that contain .class files. You should be able to open Main.java and choose Debug from the debug menu in VSC to compile and run the code.
 
 ## Mac
 
@@ -48,11 +57,12 @@ This will list all the versions of Java you have installed. To remove version 11
 ```bash
 sudo rm -rf jdk-11.0.2.jdk
 ```
+
 You can get Java 8, Visual Studio code etc for the Mac from here:
 
 - [JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Visual Studio Code Java Extensions](vscode:extension/vscjava.vscode-java-pack)
+- [Visual Studio Code Java Extensions](https://code.visualstudio.com/docs/languages/java)
 
 The first time you type ```git``` in the Mac terminal, the OS will prompt you to install the XCode command line tools that also contains git.
 
