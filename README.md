@@ -23,6 +23,8 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Week 3 - Using Loops in Java
+
 # Week 2 - Using Variables in Java, HelloProcessing example
 
 - Check out the HelloProcessing class in the repo
