@@ -63,7 +63,7 @@ colorMode(HSB);
 
 In the setup method.
 
-Ok here are some patterns you can generate using loops. I suggest you modify the Loops class and add a seperate method to generate each of the patterns so you can keep your code modular. Don't forget to call the method from draw()
+Ok here are some patterns you can generate using loops. I suggest you modify the Loops class and add a *seperate method* to generate each of the patterns so you can keep your code modular. Don't forget to call the methods from draw(). Also you can call colorMode, stroke and fill in each method you write as appropriate for the problem you are trying to solve.
 
 ![](https://github.com/skooter500/GP-2018-2019/blob/master/images/p19.png)
 
@@ -73,16 +73,13 @@ Ok here are some patterns you can generate using loops. I suggest you modify the
 
 ![](https://github.com/skooter500/GP-2018-2019/raw/master/images/p33.png)
 
+These next two require nested loops...
+
 ![](https://github.com/skooter500/GP-2018-2019/raw/master/images/p32.png)
 
 ![](https://github.com/skooter500/GP-2018-2019/raw/master/images/p23.png)
 
 for loops are probably a better choice for most of these, but you should try writing one or two of them using while loops for practice:
-
-To make this, you will need to use some trigonometry. You can use the ```text``` method to print text
-
-![](https://github.com/skooter500/GP-2018-2019/blob/master/images/p22.png)
-
 
 # Week 2 - Using Variables in Java, HelloProcessing example
 
