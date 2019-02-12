@@ -24,6 +24,65 @@ Resources
 - End of Year exam - 50%
 
 # Week 3 - Using Loops in Java
+- [For loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html)
+- [While loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html)
+- [Foreach loop](https://docs.oracle.com/javase/8/docs/technotes/guides/language/foreach.html)
+
+Check out the class Loops class in the repo for some examples
+
+## Lab
+
+### Learning Outcomes
+- Know how to write a for loop
+- Know how to write a while loop
+- Know when to use either type of loop
+- Practice computational thinking
+
+Clone/pull the repository for the course as you need. 
+Create a branch for your work today:
+
+```b
+git checkout -b lab3
+```
+
+You can add your code to the Loops class.
+
+To set colors, you can use the methods:
+
+```
+stroke
+fill
+background
+```
+
+These are methods on the PApplet class that take either one parameter (a greyscale value) or three parameters (RGB). Another way of generating colors is by using the HSB colorspace. HSB stands for Hue, Saturation and Brightness. In Processing, these values go between 0-255. Hue is the color, saturation is the amount of grey and brightness is the brightness. It is much easier to generate interesting colors procedurally using HSB colorspace. To use HSB colorspace, call:
+
+```
+colorMode(HSB);
+```
+
+In the setup method.
+
+Ok here are some patterns you can generate using loops. I suggest you modify the Loops class and add a seperate method to generate each of the patterns so you can keep your code modular. Don't forget to call the method from draw()
+
+![](https://github.com/skooter500/GP-2018-2019/blob/master/images/p19.png)
+
+![](https://github.com/skooter500/GP-2018-2019/blob/master/images/p18.png)
+
+![](https://github.com/skooter500/GP-2018-2019/blob/master/images/p31.png)
+
+![](https://github.com/skooter500/GP-2018-2019/raw/master/images/p33.png)
+
+![](https://github.com/skooter500/GP-2018-2019/raw/master/images/p32.png)
+
+![](https://github.com/skooter500/GP-2018-2019/raw/master/images/p23.png)
+
+for loops are probably a better choice for most of these, but you should try writing one or two of them using while loops for practice:
+
+To make this, you will need to use some trigonometry. You can use the ```text``` method to print text
+
+![](https://github.com/skooter500/GP-2018-2019/blob/master/images/p22.png)
+
 
 # Week 2 - Using Variables in Java, HelloProcessing example
 
