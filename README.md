@@ -38,13 +38,14 @@ Check out the class Loops class in the repo for some examples
 - Know when to use either type of loop
 - Practice computational thinking
 
-Clone/pull the repository for the course as you need. 
+Clone/pull the repository for the course as you need. If you are cloning a new repository, don't forget to create the bin folder inside the java folder.
+
 Create a branch for your work today:
 
 ```b
+cd OOP-2018-2019
 git checkout -b lab3
 ```
-
 You can add your code to the Loops class.
 
 To set colors, you can use the methods:
@@ -63,7 +64,7 @@ colorMode(HSB);
 
 In the setup method.
 
-Ok here are some patterns you can generate using loops. I suggest you modify the Loops class and add a *seperate method* to generate each of the patterns so you can keep your code modular. Don't forget to call the methods from draw(). Also you can call colorMode, stroke and fill in each method you write as appropriate for the problem you are trying to solve.
+Ok here are some patterns you can generate using loops. I suggest you modify the Loops class and add a *seperate method* to generate each of the patterns so you can keep your code modular. Don't forget to call the methods you write from ```draw()```. Also you can call colorMode, stroke and fill in each method you write as appropriate for the problem you are trying to solve.
 
 ![](https://github.com/skooter500/GP-2018-2019/blob/master/images/p19.png)
 
