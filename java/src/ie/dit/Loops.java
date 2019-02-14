@@ -97,12 +97,123 @@ public class Loops extends PApplet
 		}
 	}
 
+	void problem1()
+	{
+		int numLines = 20;
+		float gap = width / numLines;
+
+		for(int l = 0 ; l <= numLines; l ++)
+		{
+			float x = l * gap;
+			line(x, 0, width - x, height);
+			line(0, x, width, height - x);
+			
+		}
+	}
+
+	void problem2()
+	{
+		noFill();
+		int numCircles = 10;
+		float diameter = width / numCircles;
+		float radius = diameter / 2;
+
+		for(int i = 0 ; i < numCircles ; i ++)
+		{
+			float x = radius + (i * diameter);
+			// This is another nice way tocalculate x
+			//x = map(i, 0, numCircles, radius, width + radius);
+			ellipse(x, height * .2f, diameter, diameter);
+		}
+	}
+
+	void problem4()
+	{
+		colorMode(HSB);
+		noStroke();
+		int numCircles = 10;
+		float diameter = width / numCircles;
+		float radius = diameter / 2;
+
+		float colorgap = 255 / numCircles;
+		for(int i = 0 ; i < numCircles ; i ++)
+		{
+			float x = radius + (i * diameter);
+			// This is another nice way tocalculate x
+			//x = map(i, 0, numCircles, radius, width + radius);
+			fill(i * colorgap, 255, 255);
+			ellipse(x, height * 0.4f, diameter, diameter);
+		}
+	}
+
+	void problem3()
+	{
+		colorMode(HSB);
+		noStroke();		
+
+		float numBoxes = 10;
+		float colorGap = 255 / numBoxes;
+		float gap = width / numBoxes;
+		for(int box = 0 ; box < numBoxes ; box ++)
+		{
+			fill(colorGap * box, 255, 255);
+			rect(box * gap, 0, gap, height);
+		}
+	}
+
+	void problem5()
+	{
+		colorMode(HSB);
+		noStroke();
+		int numCircles = 10;
+		float diameter = width / numCircles;
+		float radius = diameter / 2;
+
+		float colorgap = 255 / numCircles;
+		// Nested loop
+		for(int i = 0 ; i < numCircles ; i ++)
+		{
+			for(int j = 0 ; j < numCircles ; j ++)
+			{
+				float x = radius + (i * diameter);
+				float y = radius + (j * diameter);
+				fill((i + j) * colorgap * 0.5f, 255, 255);
+				ellipse(x, y, diameter, diameter);
+			}
+		}
+	}
+
+	void problem6()
+	{
+		colorMode(RGB);
+		noStroke();
+		int gridSize = 10;
+		float w = width / gridSize;		
+		// Nested loop
+		for(int i = 0 ; i < gridSize ; i ++)
+		{
+			for(int j = 0 ; j < gridSize ; j ++)
+			{
+				float x = i * w;
+				float y = j * w;
+				// One possible way!
+				int b = ((i + j) % 2 == 0) ? 255 : 127;
+				// Another way would be to use a boolean variable
+				fill(0, 0, b);
+				rect(x, y, w, w);
+			}
+		}
+	}
+
 
 	public void draw()
 	{			
 		background(0);
 		stroke(255);
 		noFill();	
+
+		/*
+		// Examples
 		drawFace(cx + dx, cy + dy, 70);
 		drawFace(cx + dx, cy -dy, 70);
 		drawFace(cx - dx, cy + dy, 70);
@@ -111,6 +222,14 @@ public class Loops extends PApplet
 		dx ++;
 		dy ++;
 		loops();
-		loops1();
+		*/
+
+		// Lab problems...		
+		//problem1();
+		//problem2();
+		//problem3();
+		//problem4();
+		problem5();
+		problem6();
 	}
 }
