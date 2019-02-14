@@ -230,6 +230,6 @@ public class Loops extends PApplet
 		//problem3();
 		//problem4();
 		problem5();
-		problem6();
+		//problem6();
 	}
 }
