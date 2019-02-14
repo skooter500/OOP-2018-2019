@@ -87,6 +87,9 @@ for loops are probably a better choice for most of these, but you should try wri
 - Check out the HelloProcessing class in the repo
 - We drew the all seeing eye using the Processing drawing methods
 
+![](https://github.com/skooter500/GP-2018-2019/raw/master/images/https://github.com/skooter500/GP-2016-2017/blob/master/images/p1.2.png?raw=true)
+
+
 ## Learning Outcomes
 - Practice drawing stuff and working out co-ordinates
 - Practice using variables and if statements in Java
