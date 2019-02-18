@@ -1,6 +1,7 @@
 package ie.dit;
 
 import processing.core.PApplet;
+import java.util.Arrays;
 
 public class Loops extends PApplet
 {	
@@ -232,4 +233,5 @@ public class Loops extends PApplet
 		problem5();
 		//problem6();
 	}
+
 }
