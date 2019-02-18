@@ -26,14 +26,14 @@ Resources
 # Week 4 - Arrays
 - [Arrays](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html)
 
-Checak out Arrays.java for the program we wrote in the class today
+Checak out [Arrays.java](https://github.com/skooter500/OOP-2018-2019/blob/master/java/src/ie/dit/Arrays.java) for the program we wrote in the class today
 
 # Week 3 - Using Loops in Java
 - [For loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html)
 - [While loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html)
 - [Foreach loop](https://docs.oracle.com/javase/8/docs/technotes/guides/language/foreach.html)
 
-Check out the class Loops class in the repo for some examples
+Check out [Loops.java](https://github.com/skooter500/OOP-2018-2019/blob/master/java/src/ie/dit/Loops.java) in the repo for some examples
 
 ## Lab
 
