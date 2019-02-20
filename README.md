@@ -56,21 +56,16 @@ float[] frequencies = {293.66f, 329.63f, 369.99f, 392.00f, 440.00f, 493.88f, 554
 String[] spellings = {"D,", "E,", "F,", "G,", "A,", "B,", "C", "D", "E", "F", "G", "A", "B","c", "d", "e", "f", "g", "a", "b", "c'", "d'", "e'", "f'", "g'", "a'", "b'", "c''", "d''"};
 ```
 
--  Write a class called PitchSpeller that has the above 2 arrays as fields. It should have a method ```public String spell(float frequency)``` that takes a frequency as a parameter and returns the note which is closest to that frequency. Test your solution by adding code to the main method. For example:
+-  Write a class called PitchSpeller that has the above 2 arrays as fields. It should have a method ```public String spell(float frequency)``` that takes a frequency as a parameter and returns the note spelling which is closest to that frequency. Test your solution by adding code to the main method. For example:
 
 
 ### Advanced!
 
-Try and draw this pie chart:
+Try and draw this pie chart of the rainfall data:
 
 ![Sketch](images/p8.png)
 
 You can use the Processing arc method to do this!
-
-- [Solution](processing/data)
-
-
-
 
 # Week 3 - Using Loops in Java
 - [For loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html)
