@@ -34,5 +34,10 @@ public class Main
 	{
 		Main main = new Main();
 		main.arrays();			
+
+		PitchSpeller ps = new PitchSpeller();
+		System.out.println(ps.spell(330));
+		System.out.println(ps.spell(420));
+		System.out.println(ps.spell(1980));
 	}
 }
