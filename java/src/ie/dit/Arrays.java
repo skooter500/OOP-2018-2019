@@ -144,12 +144,42 @@ public class Arrays extends PApplet
         }
     }
 
+    void drawPieChart()
+    {
+        float cx = width / 2;
+        float cy = height / 2;
+
+        float w = width * 0.8f;
+        //arc(cx, cy, w, w, 0, TWO_PI, ARC);
+
+        float total = 0;
+        colorMode(HSB);
+        for (int i = 0 ; i < rainFall.length ; i ++)
+        {
+            total += rainFall[i];
+        }
+
+        float runningSum = 0;
+        for (int i = 0 ; i < rainFall.length ; i ++)
+        {
+            float next = runningSum + rainFall[i];
+            float start = map(runningSum, 0, total, 0, TWO_PI);
+            float end = map(next, 0, total, 0, TWO_PI);
+            fill(map(i, 0, rainFall.length, 0, 255), 255, 255);
+            arc(cx, cy, w, w, start, end, ARC);
+            runningSum = next;
+        }
+
+    }
+
+
+
     public void draw()
     {
         background(0);
 
-        drawLineGraph();;
-
+        //drawLineGraph();;
+        drawPieChart();
         //drawBarChart();
 
         /*float gap = height / (float) rainFall.length;
