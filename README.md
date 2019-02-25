@@ -28,6 +28,11 @@ Resources
 - [2016 Lab test](https://github.com/skooter500/OOP-LabTest1-2016)
 - [Solution](https://github.com/skooter500/StarMap)
 
+A video with all the code we wrote in the class:
+
+[![YouTube](http://img.youtube.com/vi/bkLtktd7yCk/0.jpg)](https://www.youtube.com/watch?v=bkLtktd7yCk)
+
+
 # Week 4 - Arrays
 - [Arrays](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html)
 
