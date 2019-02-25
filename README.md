@@ -23,6 +23,11 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Week 5 - Classes & ArrayLists
+
+- [2016 Lab test](https://github.com/skooter500/OOP-LabTest1-2016)
+- [Solution](https://github.com/skooter500/StarMap)
+
 # Week 4 - Arrays
 - [Arrays](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html)
 
