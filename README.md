@@ -36,6 +36,7 @@ A video with all the code we wrote in the class:
 - Learn how to fork a git repository
 - Learn how to use the Processing map function
 - Learn how to iterate over an ArrayList
+- Use accessor methods
 
 In todays lab we will plot the elements from the ArrayList of Star objects to the screen
 
