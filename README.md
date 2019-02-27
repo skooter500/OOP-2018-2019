@@ -27,7 +27,7 @@ Resources
 
 - [2016 Lab test](https://github.com/skooter500/OOP-LabTest1-2016)
 
-A video with all the code we wrote in the class:
+A video from Monday's class:
 
 [![YouTube](http://img.youtube.com/vi/bkLtktd7yCk/0.jpg)](https://www.youtube.com/watch?v=bkLtktd7yCk)
 
