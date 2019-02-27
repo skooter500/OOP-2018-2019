@@ -11,6 +11,9 @@ public class Star
     private float zG;
     private float absMag;
 
+    private float screenX;
+    private float screenY;
+
     public void setDisplayName(String displayName)
     {
         this.displayName = displayName;
@@ -104,6 +107,35 @@ public class Star
         yG = row.getFloat("Yg");
         zG = row.getFloat("Zg");
         absMag = row.getFloat("AbsMag");
+
+    }
+
+    /**
+     * @return the screenX
+     */
+    public float getScreenX() {
+        return screenX;
+    }
+
+    /**
+     * @param screenX the screenX to set
+     */
+    public void setScreenX(float screenX) {
+        this.screenX = screenX;
+    }
+
+    /**
+     * @return the screenY
+     */
+    public float getScreenY() {
+        return screenY;
+    }
+
+    /**
+     * @param screenY the screenY to set
+     */
+    public void setScreenY(float screenY) {
+        this.screenY = screenY;
     }
 
 }
