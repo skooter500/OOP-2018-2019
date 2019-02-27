@@ -131,11 +131,10 @@ Here is what the finished program should look like:
 
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-
 - Create a branch in your forked repository for your code today
 - read about the processing [map](https://processing.org/reference/map_.html) function. It's super useful.
-- Write a method in the StarMap class called ```drawGrid``` that draws the grid lines and the numbers along the grid
-- Write a method called ```drawStars``` that plots the stars onto the grid, using the *xG* and *yG* fields in the star to map onto the grid. 
+- Write a method in the StarMap class called ```drawGrid``` that draws the grid lines and the numbers along the grid. Use the map function!
+- Write a method called ```drawStars``` that plots the stars onto the grid, using the *xG* and *yG* fields in the star to map onto the grid. Use the accessor methods on the Star objects. 
 - Draw a yellow cross at the center of the star and a circle of diameter *absMag* field of the star. To do this you will have to iterate over the ArrayList of Star's 
 - Use the text method to print the name of the star. You can use the textAlign method to align the text. Look these up in the Processing reference if you need.
 
