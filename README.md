@@ -1,5 +1,5 @@
 # DT228/DT282 Object Oriented Programming 2018-2019
-123\
+
 Resources
 ---------
 - [Install the software you will need for this module](install.md)
@@ -26,7 +26,6 @@ Resources
 # Week 5 - Classes & ArrayLists
 
 - [2016 Lab test](https://github.com/skooter500/OOP-LabTest1-2016)
-- [Solution](https://github.com/skooter500/StarMap)
 
 A video with all the code we wrote in the class:
 
