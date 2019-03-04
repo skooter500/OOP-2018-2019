@@ -8,6 +8,10 @@ import processing.data.TableRow;
 
 public class StarMap extends PApplet
 {
+
+    int selected1 = -1;
+    int selected2 = -1;
+
     public void settings()
     {
         size(500, 500);
@@ -90,9 +94,9 @@ public class StarMap extends PApplet
         }
     } 
 
-    public void mousePressed()
+    public void mouseClicked()
     {
-        //mouseX, mouseY;    
+            
     }
 
     public void draw()
