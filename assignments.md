@@ -1,6 +1,8 @@
 # Object Oriented Programming Assignments
 ## Assignment
 
+Fork [this starter project](https://github.com/skooter500/SciFiUI)
+
 Use Java with Processing to create a UI for a sci-fi movie device like a warp drive, engines, weapons system. You can base it on any movie you like or come up with your own. It should be kinda usable. It should have lots of animation & interactivity and look amazing. It can be as far out as you like. In other words it can be for an alien. You sould use all the stuff you are learning on the course:
 
 - Variables, loops, methods
@@ -11,13 +13,13 @@ Use Java with Processing to create a UI for a sci-fi movie device like a warp dr
 
 You can take inspiration from sci-fi movies that you like, such as these ones:
 
-![Sketch](images/ui1.png)
+![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui1.png)
 
-![Sketch](images/ui2.png)
+![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui2.png)
 
-![Sketch](images/ui3.png)
+![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui3.png)
 
-![Sketch](images/ui4.png)
+![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui4.png)
 
 Also! You should include a readme.md file and embed a youtube video demo of your assignment in the readme file.
 
