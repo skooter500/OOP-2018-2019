@@ -13,13 +13,13 @@ Use Java with Processing to create a UI for a sci-fi movie device like a warp dr
 
 You can take inspiration from sci-fi movies that you like, such as these ones:
 
-![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui1.png)
+![Sketch](https://raw.githubusercontent.com/skooter500/OOP-2017-2018/master/images/ui1.png)
 
-![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui2.png)
+![Sketch](https://raw.githubusercontent.com/skooter500/OOP-2017-2018/master/images/ui2.png)
 
-![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui3.png)
+![Sketch](https://raw.githubusercontent.com/skooter500/OOP-2017-2018/master/images/ui3.png)
 
-![Sketch](https://github.com/skooter500/OOP-2017-2018/tree/master/images/ui4.png)
+![Sketch](https://raw.githubusercontent.com/skooter500/OOP-2017-2018/master/images/ui4.png)
 
 Also! You should include a readme.md file and embed a youtube video demo of your assignment in the readme file.
 
