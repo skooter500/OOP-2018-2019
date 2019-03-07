@@ -30,9 +30,12 @@ public class CafeRubis extends PApplet
         int which = -1;
 
         // The best way!!
-        if ((mouseY - border) % (buttonHeight + gap) < buttonHeight)
+        if ((mouseX > border && mouseX < border + buttonWidth))
         {
-            which = (int) ((mouseY - border) / (buttonHeight + gap));
+            if ((mouseY - border) % (buttonHeight + gap) < buttonHeight)
+            {
+                which = (int) ((mouseY - border) / (buttonHeight + gap));
+            }
         }
 
         
