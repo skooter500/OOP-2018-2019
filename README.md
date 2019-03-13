@@ -23,6 +23,50 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Week 7 - Making a Ship class for the YASC game
+- [Download YASC on Itch with full source code](https://skooter500.itch.io/yasc)
+- [Classes in Java](https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html)
+- [Classes in Processing](https://processing.org/reference/class.html)
+- [translate](https://processing.org/reference/translate_.html)
+- [rotate](https://processing.org/reference/rotate_.html)
+- [pushMatrix](https://processing.org/reference/pushMatrix_.html)
+- [The Unit circle](https://www.khanacademy.org/math/algebra2/trig-functions/unit-circle-definition-of-trig-functions-alg2/v/unit-circle-definition-of-trig-functions-1)
+
+## Lab
+### Learning outcomes
+- Know how to make a class in Java that has state and behaviour
+- Know how to use translate, rotate, pushMatrix and popMatrix
+- Know how to fork a repository and set the upstream remote
+
+In Monday's class, we went through an example of making a class to encapsulate the state and behaviour of a Ship in a computer game. We also looked at the starter code for the assignment.
+
+If you haven't already, fork [the starter code for the assignment](https://github.com/skooter500/SciFiUI) and set the upstream remote. If you have already done this then *update your fork from my repository now* as I made a small change after Monday's class. Check these out if you need a reminder on how to do any of this:
+
+- [Forking a repository](https://help.github.com/en/articles/fork-a-repo)
+- [Syncing a fork](https://help.github.com/en/articles/syncing-a-fork)
+
+Also update your fork of this repository to get the code we wrote in the class on Monday. 
+
+Study the Ship example we made and make sure you know how it works. Make sure you understand:
+
+- Fields
+- Accessors
+- Parameterised constructor
+- Default constructor
+- Constructor chaining
+- Why YASC is passed into the constructor
+- rotate, translate, pushMatrix and popMatrix
+
+Ok! Your task today is to use what you learned in Monday's class to make a Radar class in your *assignment* repo:
+
+[![YouTube](http://img.youtube.com/vi/SQ3mj3u00T8/0.jpg)](https://www.youtube.com/watch?v=SQ3mj3u00T8)
+
+
+Make a class called Radar, with appropriate fields, accessors, constructors and methods 
+You can use either trigonometry or rotate and translate in your solution.
+
+Work on other UI elements for you assignment.
+
 # Week 6 - More on classes & ArrayLists & the map function
 - [map](https://processing.org/reference/map_.html)
 
@@ -34,6 +78,7 @@ Resources
 - Get some practice for your upcoming lab test
 
 Try [this lab test](https://github.com/skooter500/OOP_Labtest1_2017_Starter) from last year
+[Solution in pure Processing]()
 
 # Week 5 - Classes & ArrayLists
 

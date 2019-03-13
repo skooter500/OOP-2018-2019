@@ -20,10 +20,7 @@ public class YASC extends PApplet
     {
         return keys[c] || keys [Character.toUpperCase(c)];
     }
-
-
-
-
+    
     public void settings()
     {
         size(800, 800);

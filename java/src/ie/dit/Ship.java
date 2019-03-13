@@ -24,6 +24,7 @@ public class Ship
 
     public void render()
     {
+        yasc.pushMatrix();
         yasc.translate(pos.x, pos.y);
         yasc.rotate(rotation);
         
@@ -35,13 +36,13 @@ public class Ship
         yasc.line(halfSize, halfSize
             ,0, 0);
         yasc.line(0, 0, -halfSize, halfSize);
-
+        yasc.popMatrix();
     }
 
     public void update()
     {
-        forward.x = yasc.sin(rotation);
-        forward.y = - yasc.cos(rotation);
+        forward.x = (float) Math.sin(rotation);
+        forward.y = - (float) Math.cos(rotation);
         if (yasc.checkKey('w'))
         {
             pos.x += forward.x;
