@@ -5,6 +5,7 @@ import processing.core.PApplet;
 public class YASC extends PApplet
 {
     Ship s;
+    AIShip aiShip;
     boolean[] keys = new boolean[1024];
 
     public void keyPressed()
@@ -30,6 +31,7 @@ public class YASC extends PApplet
     public void setup()
     {
         s = new Ship(this, width / 2, height / 2, 5, 50);
+        aiShip = new AIShip(this, 100, 100, 5, 50);
     }
 
     public void draw()
@@ -37,6 +39,9 @@ public class YASC extends PApplet
         background(255);
         s.render();
         s.update();
+
+        aiShip.update();
+        aiShip.render();
     }
 
 

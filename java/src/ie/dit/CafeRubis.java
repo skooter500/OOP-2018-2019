@@ -5,6 +5,7 @@ import processing.core.PApplet;
 import processing.data.Table;
 import processing.data.TableRow;
 
+
 public class CafeRubis extends PApplet
 {
     ArrayList<Product> products = new ArrayList<Product>();

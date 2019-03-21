@@ -29,6 +29,7 @@ public class Ship
         yasc.rotate(rotation);
         
         float halfSize = size / 2;
+        yasc.stroke(0);
         yasc.line(- halfSize, halfSize, 0, - halfSize);
         yasc.line(0, - halfSize
         , halfSize, halfSize);
