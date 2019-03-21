@@ -23,6 +23,11 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Week 8 - No class due to bank holiday
+
+## Lab
+Work on your assignment
+
 # Week 7 - Making a Ship class for the YASC game
 - [Download YASC on Itch with full source code](https://skooter500.itch.io/yasc)
 - [Classes in Java](https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html)

@@ -29,7 +29,7 @@ public class Audio1 extends PApplet
 
     public void draw()
     {
-        background(0);
+        background(map(mouseX, 0, width, 0, 255));
         stroke(255);
         float middle = height / 2; 
         for(int i = 0 ; i < ai.bufferSize() ; i ++)
