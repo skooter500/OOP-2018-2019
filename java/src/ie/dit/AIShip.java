@@ -5,25 +5,14 @@ import java.util.ArrayList;
 import processing.core.PApplet;
 import processing.core.PVector;
 
-public class AIShip
+public class AIShip extends GameObject
 {
-    private PVector pos;
-    private PVector forward;
-    private float speed;
-    private float size;
-    private YASC yasc;
-
-    private float rotation;
-
+    float size;
     private ArrayList<PVector> waypoints = new ArrayList<PVector>(); 
 
     public AIShip(YASC yasc, float x, float y, float speed, float size)
     {
-        this.yasc = yasc;
-        pos = new PVector(x, y);
-        forward = new PVector(0, -1);
-        this.speed = speed;
-        this.size = size;
+       super(yasc, x, y, 0, 5);
 
         for(int i = 0 ; i < 5 ; i ++)
         {
@@ -69,65 +58,5 @@ public class AIShip
         {
             current = (current + 1) % waypoints.size();
         }
-    }
-
-
-    /**
-     * @return the pos
-     */
-    public PVector getPos() {
-        return pos;
-    }
-
-    /**
-     * @param pos the pos to set
-     */
-    public void setPos(PVector pos) {
-        this.pos = pos;
-    }
-
-    /**
-     * @return the speed
-     */
-    public float getSpeed() {
-        return speed;
-    }
-
-    /**
-     * @param speed the speed to set
-     */
-    public void setSpeed(float speed) {
-        this.speed = speed;
-    }
-
-    /**
-     * @return the size
-     */
-    public float getSize() {
-        return size;
-    }
-
-    /**
-     * @param size the size to set
-     */
-    
-
-	/**
-	 * @return the yasc
-	 */
-	public YASC getYasc() {
-		return yasc;
-	}
-
-	/**
-	 * @param yasc the yasc to set
-	 */
-	public void setYasc(YASC yasc) {
-		this.yasc = yasc;
-    }
-    public void setSize(float size) {
-        this.size = size;
-    }
-
-    
+    }    
 }

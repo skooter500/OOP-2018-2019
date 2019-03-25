@@ -6,11 +6,9 @@ import processing.core.PApplet;
 
 public class YASC extends PApplet
 {
-    Ship s;
-    AIShip aiShip;
     boolean[] keys = new boolean[1024];
 
-    public ArrayList<Bullet> bullets = new ArrayList<Bullet>(); 
+    public ArrayList<GameObject> gameObjects = new ArrayList<GameObject>(); 
 
     public void keyPressed()
     {
@@ -33,8 +31,8 @@ public class YASC extends PApplet
 
     public void setup()
     {
-        s = new Ship(this, width / 2, height / 2, 5, 50);
-        aiShip = new AIShip(this, 100, 100, 5, 50);
+        gameObjects.add(new Ship(this, width / 2, height / 2, 5, 50));
+        gameObjects.add(new AIShip(this, 100, 100, 5, 50));
     }
 
     public float timeDelta;
@@ -45,17 +43,12 @@ public class YASC extends PApplet
         timeDelta = (now - last) / 1000.0f;
         last = now;
         background(255);
-        s.render();
-        s.update();
-
-        aiShip.update();
-        aiShip.render();
-
+        
         fill(0);
-        text("Bullets: " + bullets.size(), 50, 100);
-        for(int i= bullets.size() - 1; i >= 0; i--)
+        text("GameObjects: " + gameObjects.size(), 50, 100);
+        for(int i= gameObjects.size() - 1; i >= 0; i--)
         {
-            Bullet b = bullets.get(i);
+            GameObject b = gameObjects.get(i);
             b.render();
             b.update();
         }        
