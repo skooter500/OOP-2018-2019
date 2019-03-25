@@ -1,5 +1,7 @@
 package ie.dit;
 
+import java.util.ArrayList;
+
 import processing.core.PApplet;
 
 public class YASC extends PApplet
@@ -7,6 +9,8 @@ public class YASC extends PApplet
     Ship s;
     AIShip aiShip;
     boolean[] keys = new boolean[1024];
+
+    public ArrayList<Bullet> bullets = new ArrayList<Bullet>(); 
 
     public void keyPressed()
     {
@@ -46,6 +50,14 @@ public class YASC extends PApplet
 
         aiShip.update();
         aiShip.render();
+
+        fill(0);
+        text("Bullets: " + bullets.size(), 50, 100);
+        for(Bullet b:bullets)
+        {
+            b.render();
+            b.update();
+        }
     }
 
 
