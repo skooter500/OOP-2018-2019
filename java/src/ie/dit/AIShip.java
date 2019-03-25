@@ -2,6 +2,7 @@ package ie.dit;
 
 import java.util.ArrayList;
 
+import processing.core.PApplet;
 import processing.core.PVector;
 
 public class AIShip
@@ -50,6 +51,7 @@ public class AIShip
         {
             PVector a = waypoints.get(i - 1);
             PVector b = waypoints.get(i % waypoints.size());
+            yasc.stroke(255, 0, 0);
             yasc.line(a.x, a.y, b.x, b.y);
         }
     }
@@ -62,6 +64,7 @@ public class AIShip
         float dist = toNext.mag();
         toNext.normalize();
         pos.add(toNext);
+        rotation = (float) Math.atan2(toNext.y, toNext.x) + PApplet.HALF_PI;
         if (dist < 1)
         {
             current = (current + 1) % waypoints.size();
