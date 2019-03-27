@@ -23,6 +23,22 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Week 9 - Inheritance, polymorphism and abstract classes
+- [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
+- [Polymorphism](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
+- [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+
+Check out the YASC example we are working on for examples of the above
+
+## Lab
+
+Try and implement the following ideas:
+
+- Add a fireRate to the Ship class that controls how many bullets per second it can shoot
+- Add health to the AI ship class and have it take damage when hit with a bullet
+
+Add inheritance and polymorphism to your assignment
+
 # Week 8 - No class due to bank holiday
 
 ## Lab
