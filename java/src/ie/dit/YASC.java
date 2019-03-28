@@ -10,6 +10,8 @@ public class YASC extends PApplet
 
     public ArrayList<GameObject> gameObjects = new ArrayList<GameObject>(); 
 
+    AIShip aiShip;
+
     public void keyPressed()
     {
         keys[keyCode] = true;
@@ -32,7 +34,8 @@ public class YASC extends PApplet
     public void setup()
     {
         gameObjects.add(new Ship(this, width / 2, height / 2, 5, 50));
-        gameObjects.add(new AIShip(this, 100, 100, 5, 50));
+        aiShip = new AIShip(this, 100, 100, 5, 50);
+        gameObjects.add(aiShip);
     }
 
     public float timeDelta;

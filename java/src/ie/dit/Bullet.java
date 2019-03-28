@@ -18,6 +18,16 @@ public class Bullet extends GameObject
         yasc.popMatrix();
     }
 
+    public void checkCollisions()
+    {
+        float dist = PVector.dist(yasc.aiShip.getPos(), pos);
+        if (dist < yasc.aiShip.size / 2)
+        {
+            yasc.aiShip.setHealth(yasc.aiShip.getHealth() - 1);
+            yasc.gameObjects.remove(this);
+        }
+    }
+
     public void update()
     {
         // static methods on the Math class
@@ -48,6 +58,7 @@ public class Bullet extends GameObject
         {
             yasc.gameObjects.remove(this);
         }
+        checkCollisions();
     }
 
     float alive;

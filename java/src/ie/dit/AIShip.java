@@ -8,16 +8,19 @@ import processing.core.PVector;
 public class AIShip extends GameObject
 {
     float size;
+    private int health = 10;
     private ArrayList<PVector> waypoints = new ArrayList<PVector>(); 
 
     public AIShip(YASC yasc, float x, float y, float speed, float size)
     {
        super(yasc, x, y, 0, 5);
+       this.size = size;
 
         for(int i = 0 ; i < 5 ; i ++)
         {
             waypoints.add(new PVector(yasc.random(0, yasc.width), yasc.random(0, yasc.height)));
         }
+
     }
 
     public void render()
@@ -43,6 +46,8 @@ public class AIShip extends GameObject
             yasc.stroke(255, 0, 0);
             yasc.line(a.x, a.y, b.x, b.y);
         }
+        yasc.fill(0);    
+        yasc.text("Health:" + health, pos.x + 25, pos.y);
     }
 
     int current = 0;
@@ -58,5 +63,61 @@ public class AIShip extends GameObject
         {
             current = (current + 1) % waypoints.size();
         }
-    }    
+    }
+
+    /**
+     * @return the size
+     */
+    public float getSize() {
+        return size;
+    }
+
+    /**
+     * @param size the size to set
+     */
+    public void setSize(float size) {
+        this.size = size;
+    }
+
+    /**
+     * @return the health
+     */
+    public int getHealth() {
+        return health;
+    }
+
+    /**
+     * @param health the health to set
+     */
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    /**
+     * @return the waypoints
+     */
+    public ArrayList<PVector> getWaypoints() {
+        return waypoints;
+    }
+
+    /**
+     * @param waypoints the waypoints to set
+     */
+    public void setWaypoints(ArrayList<PVector> waypoints) {
+        this.waypoints = waypoints;
+    }
+
+    /**
+     * @return the current
+     */
+    public int getCurrent() {
+        return current;
+    }
+
+    /**
+     * @param current the current to set
+     */
+    public void setCurrent(int current) {
+        this.current = current;
+    }
 }
