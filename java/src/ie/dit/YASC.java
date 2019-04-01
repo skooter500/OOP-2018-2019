@@ -11,6 +11,7 @@ public class YASC extends PApplet
     public ArrayList<GameObject> gameObjects = new ArrayList<GameObject>(); 
 
     AIShip aiShip;
+    Ship ship;
 
     public void keyPressed()
     {
@@ -33,9 +34,13 @@ public class YASC extends PApplet
 
     public void setup()
     {
-        gameObjects.add(new Ship(this, width / 2, height / 2, 5, 50));
+        ship = new Ship(this, width / 2, height / 2, 5, 50);
+        gameObjects.add(ship);
         aiShip = new AIShip(this, 100, 100, 5, 50);
         gameObjects.add(aiShip);
+        gameObjects.add(new AmmoPowerup(this));
+        gameObjects.add(new AmmoPowerup(this));
+        
     }
 
     public float timeDelta;
@@ -54,6 +59,15 @@ public class YASC extends PApplet
             GameObject b = gameObjects.get(i);
             b.render();
             b.update();
+
+            if (b instanceof Powerup)
+            {
+                if (dist(b.pos.x, b.pos.y, ship.pos.x, ship.pos.y) < 50)
+                {
+                    ((Powerup)b).applyTo(ship);
+                    gameObjects.remove(b);
+                }
+            }
         }        
     }
 
