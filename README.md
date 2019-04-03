@@ -24,8 +24,8 @@ Resources
 - End of Year exam - 50%
 
 # Week 10 - Interfaces & the foreach loop
-- [Interfaces in Java]()
-- [Limitations of the foreach loop]()
+- [Interfaces in Java](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
+- [Limitations of the foreach loop](http://efectivejava.blogspot.com/2013/07/for-each-loop-limitations.html)
 
 Check out the Powerup interface and AmmoPowerup that implements the interface in the YASC
 
