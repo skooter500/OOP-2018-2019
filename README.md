@@ -23,6 +23,26 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Week 10 - Interfaces & the foreach loop
+- [Interfaces in Java]()
+- [Limitations of the foreach loop]()
+
+Check out the Powerup interface and AmmoPowerup that implements the interface in the YASC
+
+## Lab
+### Learning outcomes
+- Learn how to implement an interface
+
+- Add a field to the Ship class for health and display it beside the ship in the same way the ammo is displayed.
+- Make a health powerup class that implements the Powerup interface. This should add 10 units of health to the Ship, if the ship picks it up
+- Have a look at the AmmoPowerup class for an example fo how to do this. 
+- Change the render method so that the Health powerup get displayed as a square with a cross in it, so that you can distinguish it from the AmmoPowerup
+
+Advanced!
+
+Write some code in YASC.java so that the game spawns a random health or ammo powerup at a rate of one every 2 seconds
+
+
 # Week 9 - Inheritance, polymorphism and abstract classes
 - [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
 - [Polymorphism](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
