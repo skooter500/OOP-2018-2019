@@ -40,7 +40,14 @@ public class YASC extends PApplet
         gameObjects.add(aiShip);
         gameObjects.add(new AmmoPowerup(this));
         gameObjects.add(new AmmoPowerup(this));
-        
+
+
+        String s = "Hello";
+        System.out.println(s.substring(2));
+        System.out.println(s.substring(2, 4));
+        System.out.println(s.indexOf("ll"));
+        System.out.println(s.startsWith("Hel"));
+        System.out.println(s.endsWith("x"));
     }
 
     public float timeDelta;
