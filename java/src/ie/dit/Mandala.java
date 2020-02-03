@@ -10,7 +10,8 @@ public class Mandala extends PApplet {
     float[] lerpedBands;
 
     public void settings() {
-        size(FRAME_SIZE, 500);
+        //size(FRAME_SIZE, 500);
+        fullScreen();
         minim = new Minim(this);
         ai = minim.getLineIn(Minim.MONO, FRAME_SIZE, SAMPLE_RATE, BITS_PER_SAMPLE);
         fft = new FFT(FRAME_SIZE, SAMPLE_RATE);

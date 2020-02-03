@@ -75,9 +75,25 @@ public class Main
 
 	public static void main(String[] args)
 	{
-	
+		PVector a = new PVector(10, 10);
+		PVector b = new PVector(20, 20);
+
+		b = a;
+		a.x = 30;
+		a.y = 30;
+		System.out.println(b);
+
+		float f = 10;
+		float g = 20;
+
+		g = f;
+		f = 30;
+		System.out.println(g);
+
+
+		
 		Main main = new Main();
-		main.audio2();		
+		main.yasc();		
 			
 	}
 }
